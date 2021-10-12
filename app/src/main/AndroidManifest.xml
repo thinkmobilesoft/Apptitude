@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Apptitude">
         <activity
+            android:name=".Question"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryActivity"
+            android:exported="false" />
+        <activity
             android:name=".StatsActivity"
             android:exported="true" />
         <activity

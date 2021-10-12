@@ -1,8 +1,12 @@
 package com.thinkmobilly.apptitude
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.GridView
+import android.widget.ImageButton
+import java.util.*
+import kotlin.collections.ArrayList
 
 class StatsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,5 +21,11 @@ class StatsActivity : AppCompatActivity() {
 
         val simpleGrid: GridView = findViewById(R.id.simpleGridView)
         simpleGrid.adapter = StatAdapter(this, allStat)
+
+        val nextBtn = findViewById<ImageButton>(R.id.next_btn)
+        nextBtn.setOnClickListener{
+            val intent: Intent = Intent(this, CategoryActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

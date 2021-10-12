@@ -67,7 +67,7 @@
             android:fontFamily="@font/opensansextrabold"
             android:text="John Doe"
             android:textColor="#ffffff"
-            android:textSize="34dp"
+            android:textSize="34sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/top"/>
