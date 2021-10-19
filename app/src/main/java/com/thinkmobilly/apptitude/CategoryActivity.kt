@@ -9,6 +9,7 @@ class CategoryActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_category)
+        supportActionBar?.hide()
 
         val startbtn: ImageButton = findViewById(R.id.startBtn)
         val intent: Intent = Intent(this,Question::class.java)

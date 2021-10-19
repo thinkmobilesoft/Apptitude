@@ -1,17 +1,16 @@
 package com.thinkmobilly.apptitude
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.GridView
 import android.widget.ImageButton
-import java.util.*
-import kotlin.collections.ArrayList
+import androidx.appcompat.app.AppCompatActivity
 
 class StatsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_stats)
+        supportActionBar?.hide()
 
         val allStat: ArrayList<StatFeed> = ArrayList()
         allStat.add(StatFeed("Total Score",R.drawable.icon_15_trophy))
